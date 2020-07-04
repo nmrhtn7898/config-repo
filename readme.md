@@ -24,8 +24,8 @@ spring:
 {
     "name":"testservice",
     "profiles":[
-    "dev"
-],
+        "dev"
+    ],
     "label":null,
     "version":"96a62e9e18a9f4fe77164e89dbb6b322d236b67a",
     "state":null,
