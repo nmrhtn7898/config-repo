@@ -20,31 +20,35 @@ spring:
 * 엔드 포인트 url 패턴 */{application-name}/{profile}*
 * 사용 예시 /testservice/dev, profile dev 경우 default, dev 설정 파일 모두 사용하고 중복 프로퍼티는 dev 설정 파일에
  존재하는 프로퍼티 값으로 overwrite 한다. 응답 JSON 예시 아래와 같음.
+* 암호화 프로퍼티는 {cipher} prefix 적용
 ```$xslt
 {
-    "name":"testservice",
-    "profiles":[
+    "name": "testservice",
+    "profiles": [
         "dev"
     ],
-    "label":null,
-    "version":"96a62e9e18a9f4fe77164e89dbb6b322d236b67a",
-    "state":null,
-    "propertySources":[
+    "label": null,
+    "version": "23583d91f47e2f7f73ff8c913fd57fdeb20a95d1",
+    "state": null,
+    "propertySources": [
         {
-            "name":"https://github.com/nmrhtn7898/config-repo//testservice/testservice-dev.yml",
-            "source":{
-                "name.firstname":"sin",
-                "name.lastname":"nari",
-                "name.message":"i am dev"
+            "name": "https://github.com/nmrhtn7898/config-repo//testservice/testservice-dev.yml",
+            "source": {
+                "name.firstname": "sin",
+                "name.lastname": "nari",
+                "name.password": "{cipher}3376eee3887c9f11c1593536ce075dd1bab11eba5fbdab9f9348da9e06f7c3fa",
+                "name.message": "i am dev"
             }
         },
         {
-            "name":"https://github.com/nmrhtn7898/config-repo//testservice/testservice.yml",
-            "source":{
-                "name.firstname":"sin",
-                "name.lastname":"youngjin",
-                "name.message":"i am default"
+            "name": "https://github.com/nmrhtn7898/config-repo//testservice/testservice.yml",
+            "source": {
+                "name.firstname": "sin",
+                "name.lastname": "youngjin",
+                "name.password": "{cipher}9357c645da1f863891a6dbb93399916413841cc086c49d7821f8b7ccd437a192",
+                "name.message": "i am default+++++++++++++++++++++++++++++++++++++++"
             }
         }
-]
+    ]
+}
 ```
