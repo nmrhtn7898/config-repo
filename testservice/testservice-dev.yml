@@ -1,5 +1,5 @@
 name:
   firstname: sin
   lastname: nari
-  password: {cipher}3376eee3887c9f11c1593536ce075dd1bab11eba5fbdab9f9348da9e06f7c3fa
+  password: "{cipher}3376eee3887c9f11c1593536ce075dd1bab11eba5fbdab9f9348da9e06f7c3fa"
   message: i am dev
