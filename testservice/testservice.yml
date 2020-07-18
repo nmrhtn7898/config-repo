@@ -3,3 +3,17 @@ name:
   lastname: youngjin
   password: "{cipher}9357c645da1f863891a6dbb93399916413841cc086c49d7821f8b7ccd437a192"
   message: i am default
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://database:5432/test-database"
+    username: "nuguri"
+    password: "bom"
+    driver-class-name: "org.postgresql.Driver"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate:
+        format_sql: true

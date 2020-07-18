@@ -3,3 +3,17 @@ name:
   lastname: bom
   password: "{cipher}6fabf155e5d3b3fcb7eaa177469ca1242397f85bf12c1c7e515ad56e3366f24d"
   message: i am prod
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://database:5432/test-database"
+    username: "nuguri"
+    password: "bom"
+    driver-class-name: "org.postgresql.Driver"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate:
+        format_sql: true
