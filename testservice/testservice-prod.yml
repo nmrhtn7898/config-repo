@@ -7,8 +7,8 @@ name:
 spring:
   datasource:
     url: "jdbc:postgresql://database:5432/test-database"
-    username: "nuguri"
-    password: "bom"
+    username: "postgres"
+    password: "p0stgr@s"
     driver-class-name: "org.postgresql.Driver"
   jpa:
     hibernate:
