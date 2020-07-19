@@ -6,7 +6,7 @@ name:
 
 spring:
   datasource:
-    url: jdbc:mysql://database2:3306/dbname?serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://database2:3306/testdb?serverTimezone=UTC&useSSL=false
     username: nuguri
     password: bom
     driver-class-name: com.mysql.cj.jdbc.Driver
