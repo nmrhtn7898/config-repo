@@ -6,13 +6,13 @@ name:
 
 spring:
   datasource:
-    url: jdbc:postgresql://database:5432/test-database
-    username: postgres
-    password: p0stgr@s
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://database2:3306/dbname?serverTimezone=UTC&useSSL=false
+    username: nuguri
+    password: bom
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
       use-new-id-generator-mappings: false
     properties:
       hibernate:
