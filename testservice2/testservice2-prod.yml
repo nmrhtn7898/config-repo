@@ -27,3 +27,4 @@ logging:
           descriptor:
             sql:
               BasicBinder: TRACE
+    com.example: DEBUG
