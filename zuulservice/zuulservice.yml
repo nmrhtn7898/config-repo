@@ -23,3 +23,11 @@ zuul:
     testservice: /organization/**
     testservice2: /licensing/**
   ignored-services: "*"
+
+hystix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2500
