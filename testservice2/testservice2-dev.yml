@@ -21,7 +21,7 @@ spring:
 security:
   oauth2:
     resource:
-      user-info-uri: http://authservice:8901/auth/user
+      user-info-uri: http://authserver:8901/auth/user
 
 logging:
   level:
